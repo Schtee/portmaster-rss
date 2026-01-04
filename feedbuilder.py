@@ -41,5 +41,5 @@ feed = rfeed.Feed(
 	lastBuildDate = datetime.datetime.now(),
 	items = rss_items)
 
-with open("feed.xml", "w", encoding="utf-8") as f:
+with open("out/feed.xml", "w", encoding="utf-8") as f:
 	f.write(feed.rss())
